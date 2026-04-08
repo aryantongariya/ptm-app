@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ptm-app/static/css/main.9fec9bc4.css",
-    "main.js": "/ptm-app/static/js/main.3fbcb971.js",
+    "main.js": "/ptm-app/static/js/main.b9bc724e.js",
     "static/js/453.8453eefc.chunk.js": "/ptm-app/static/js/453.8453eefc.chunk.js",
     "static/media/logo.jpg": "/ptm-app/static/media/logo.c581a5012b3d2f5042c8.jpg",
     "index.html": "/ptm-app/index.html",
     "main.9fec9bc4.css.map": "/ptm-app/static/css/main.9fec9bc4.css.map",
-    "main.3fbcb971.js.map": "/ptm-app/static/js/main.3fbcb971.js.map",
+    "main.b9bc724e.js.map": "/ptm-app/static/js/main.b9bc724e.js.map",
     "453.8453eefc.chunk.js.map": "/ptm-app/static/js/453.8453eefc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fec9bc4.css",
-    "static/js/main.3fbcb971.js"
+    "static/js/main.b9bc724e.js"
   ]
 }
