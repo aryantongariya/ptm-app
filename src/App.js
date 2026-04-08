@@ -397,7 +397,7 @@ ${data.meetingMode}
 
                 {/* Important Note */}
                 <div className="important-note">
-                  <p>📌 <strong>IMPORTANT NOTE:</strong>After Send Pass On WhatsApp You will receive confirmation of your meeting within 24–48 hours. The final meeting time will be scheduled based on mutual availability.</p>
+                  <p>📌 <strong>IMPORTANT NOTE:</strong> You will receive confirmation of your meeting within 24–48 hours. The final meeting time will be scheduled based on mutual availability.</p>
                   <p className="thankyou-text">✅ Thank you for your cooperation!</p>
                 </div>
 
@@ -456,7 +456,7 @@ ${data.meetingMode}
             <div className="popup-icon">📌</div>
             <h3>IMPORTANT NOTE</h3>
             <div className="popup-message">
-              <p>You will receive confirmation of your meeting within 24–48 hours.</p>
+              <p>After sending the pass on WhatsApp, you will receive meeting confirmation within 24–48 hours.</p>
               <p>The final meeting time will be scheduled based on mutual availability.</p>
               <p className="thankyou">✅ Thank you for your cooperation!</p>
             </div>
