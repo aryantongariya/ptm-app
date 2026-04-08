@@ -12,6 +12,7 @@ export default function App() {
     // age: "",
     // batch: "",
     activitis: [],
+    priority: [],
     daysAttending: [],
     batchTimings: [],
     parentName: "",
@@ -59,6 +60,13 @@ export default function App() {
   ];
 
   // Meeting purposes with checkboxes
+  const prioritySelect = [
+    "Low",
+    "Medium",
+    "Urgent",
+    "High", 
+  ];  
+  
   const purposes = [
     "🎭 Performance",
     "🏫 School Event",
@@ -112,6 +120,14 @@ export default function App() {
         ? prev.meetingPurposes.filter(p => p !== purpose)
         : [...prev.meetingPurposes, purpose]
     }));
+  };  
+  const handlePriorityChange = (purpose) => {
+    setForm(prev => ({
+      ...prev,
+      priority: prev.priority.includes(purpose)
+        ? prev.priority.filter(p => p !== purpose)
+        : [...prev.priority, purpose]
+    }));
   };
 
   const handleTimeSelect = (slot) => {
@@ -157,6 +173,10 @@ export default function App() {
     if (form.meetingPurposes.length === 0) {
       alert("⚠️ Please select at least one purpose for meeting");
       return false;
+    }  
+    if (form.priority.length === 0) {
+      alert("⚠️ Please select priority for meeting");
+      return false;
     }
     if (!form.meetingTime) {
       alert("⏰ Please select a preferred meeting time");
@@ -190,6 +210,10 @@ export default function App() {
 ━━━━━━━━━━━━━━━━━━━━━━
 🎯 *PURPOSE OF MEETING:*
 ${data.meetingPurposes.map(p => `✅ ${p}`).join('\n')}
+
+━━━━━━━━━━━━━━━━━━━━━━
+⏰ *PRIORITY:*
+${data.priority}
 
 ━━━━━━━━━━━━━━━━━━━━━━
 ⏰ *PREFERRED MEETING TIME:*
@@ -370,6 +394,12 @@ ${data.meetingMode}
                     <div className="meeting-time-box">
                       {passData.meetingTime}
                     </div>
+                  </div> 
+                  <div className="column">
+                    <h3 className="section-heading">⏰ PRIORITY MEETING </h3>
+                    <div className="meeting-time-box">
+                      {passData.priority}
+                    </div>
                   </div>
                   <div className="column">
                     <h3 className="section-heading">📞 MODE OF MEETING</h3>
@@ -428,13 +458,15 @@ ${data.meetingMode}
             setForm({
               studentName: "",
               studentName2: "",
-              age: "",
-              batch: "",
+              // age: "",
+              // batch: "",
+              activitis: [],
               daysAttending: [],
               batchTimings: [],
               parentName: "",
               parentPhone: "",
               meetingPurposes: [],
+              priority: [],
               meetingTime: null,
               meetingMode: null,
               otherReason: "",
@@ -483,7 +515,7 @@ ${data.meetingMode}
         <div className="form-body">
           <div className="intro-text">
             <p><strong>📢 Dear Parents,</strong></p>
-            <p>To ensure a smooth and well-organized interaction, we have introduced this PTM slip system. If you have any queries, feedback, or concerns regarding your child's dance or any other activity, we request you to kindly fill this form before meeting the teacher.</p>
+            <p>To ensure a smooth and well-organized interaction, we have introduced this PTM slip system. If you have any Query, feedback, or concerns regarding your child's dance or any other activity, we request you to kindly fill this form before meeting the teacher.</p>
             <p><em>Thank you for your cooperation!</em></p>
           </div>
 
@@ -554,6 +586,15 @@ ${data.meetingMode}
             {purposes.map((purpose) => (
               <label key={purpose} className="checkbox-label">
                 <input type="checkbox" checked={form.meetingPurposes.includes(purpose)} onChange={() => handlePurposeChange(purpose)} />
+                {purpose}
+              </label>
+            ))}
+          </div> 
+          <h3 className="section-title">🎯 Select Priority  *</h3>
+          <div className="checkbox-group">
+            {prioritySelect.map((purpose) => (
+              <label key={purpose} className="checkbox-label">
+                <input type="checkbox" checked={form.priority.includes(purpose)} onChange={() => handlePriorityChange(purpose)} />
                 {purpose}
               </label>
             ))}
