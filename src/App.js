@@ -310,7 +310,7 @@ ${data.meetingMode}
                     <div className="detail-item">
                       <span className="detail-icon">👨‍🎓</span>
                       <span className="detail-label">STUDENT Name:</span>
-                      <span className="detail-value">{passData.studentName} ${passData.studentName2}</span>
+                      <span className="detail-value">{passData.studentName} {passData.studentName2}</span>
                     </div>
                     {/* <div className="detail-item">
                       <span className="detail-icon">🎂</span>
@@ -381,9 +381,9 @@ ${data.meetingMode}
 
                 {/* QR Code and Pass Info */}
                 <div className="pass-footer-section">
-                  <div className="qr-container">
+                  {/* <div className="qr-container">
                     <QRCode value={JSON.stringify(passData)} size={100} />
-                  </div>
+                  </div> */}
                   <div className="pass-info">
                     <div className="pass-id-box">
                       <span className="pass-id-label">🆔 PASS ID:</span>
