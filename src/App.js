@@ -181,7 +181,7 @@ export default function App() {
 
 📋 *STUDENT DETAILS:*
 👨‍🎓 *STUDENT Name:* ${data.studentName && data.studentName2} 
-📅 *Activitis Attending:* ${activitisText}
+📅 *Activities Attending:* ${activitisText}
 📅 *Days Attending:* ${daysText}
 ⏰ *Batch Timings:* ${batchTimingsText}
 👨‍👩‍👧 *Parent Name:* ${data.parentName}
@@ -324,7 +324,7 @@ ${data.meetingMode}
                     </div> */}
                     <div className="detail-item">
                       <span className="detail-icon">📅</span>
-                      <span className="detail-label">Activitis Attending:</span>
+                      <span className="detail-label">Activities Attending:</span>
                       <span className="detail-value">{activitisText}</span>
                     </div>
                       <div className="detail-item">
@@ -511,7 +511,7 @@ ${data.meetingMode}
             <input type="text" placeholder="e.g., Beginner Batch, Advanced Batch" value={form.batch} onChange={(e) => setForm({ ...form, batch: e.target.value })} />
           </div> */}
 
-          <h3 className="section-title">📅 Activitis (Select all that apply) *</h3>
+          <h3 className="section-title">📅 Activities (Select all that apply) *</h3>
           <div className="checkbox-group">
             {activitisOptions.map((day) => (
               <label key={day.value} className="checkbox-label">
