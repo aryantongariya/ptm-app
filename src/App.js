@@ -397,13 +397,13 @@ ${data.meetingMode}
 
                 {/* Important Note */}
                 <div className="important-note">
-                  <p>📌 <strong>IMPORTANT NOTE:</strong> You will receive confirmation of your meeting within 24–48 hours. The final meeting time will be scheduled based on mutual availability.</p>
+                  <p>📌 <strong>IMPORTANT NOTE:</strong>After Send Pass On WhatsApp You will receive confirmation of your meeting within 24–48 hours. The final meeting time will be scheduled based on mutual availability.</p>
                   <p className="thankyou-text">✅ Thank you for your cooperation!</p>
                 </div>
 
                 {/* Footer */}
                 <div className="pass-footer-text">
-                  <p>A One Natraj Academy 🎵</p>
+                  <p>A One Natraj Academy </p>
                 </div>
               </div>
             </div>
@@ -420,7 +420,7 @@ ${data.meetingMode}
             {downloading ? "⏳ Generating PNG..." : "📸 Download Pass "}
           </button>
           <button className="btn-whatsapp" onClick={sendWhatsAppAgain}>
-            📲 Send via WhatsApp
+            📲 Send Pass On WhatsApp
           </button>
           <button className="btn-new" onClick={() => {
             setSubmitted(false);
