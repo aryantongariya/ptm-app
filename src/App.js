@@ -1,6 +1,6 @@
 // frontend/src/App.js
 import React, { useState, useRef } from "react";
-import QRCode from "react-qr-code";
+// import QRCode from "react-qr-code";
 import html2canvas from "html2canvas";
 import logo from './logo.jpg'
 import "./App.css";
@@ -200,7 +200,7 @@ export default function App() {
 ━━━━━━━━━━━━━━━━━━━━━━
 
 📋 *STUDENT DETAILS:*
-👨‍🎓 *STUDENT Name:* ${data.studentName && data.studentName2} 
+👨‍🎓 *STUDENT Name:* ${data.studentName} ${data.studentName2}
 📅 *Activities Attending:* ${activitisText}
 📅 *Days Attending:* ${daysText}
 ⏰ *Batch Timings:* ${batchTimingsText}
