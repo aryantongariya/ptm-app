@@ -180,7 +180,7 @@ export default function App() {
 ━━━━━━━━━━━━━━━━━━━━━━
 
 📋 *STUDENT DETAILS:*
-👨‍🎓 *STUDENT Name:* ${data.studentName} ${data.studentName2}
+👨‍🎓 *STUDENT Name:* ${data.studentName && data.studentName2} 
 📅 *Activitis Attending:* ${activitisText}
 📅 *Days Attending:* ${daysText}
 ⏰ *Batch Timings:* ${batchTimingsText}
